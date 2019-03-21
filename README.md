@@ -1,229 +1,88 @@
-# [Vuetify Material Dashboard](https://www.creative-tim.com/vuetify-material-dashboard) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Vuetify%20Material%20Dashboard%20-%20Admin%20Template%20for%20Vue.js%20https%3A//www.creative-tim.com/product/vuetify-material-dashboard%20%23vuejs%20%23vuex%20%23dashboard%20%23vuetify%20%23vuetify%20material%20%20%40creativetim)
+# vue-admin-template
 
+> A minimal vue admin template with Element UI & axios & iconfont & permission control & lint
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/vuetify-material-dashboard.svg)](https://github.com/creativetimofficial/vuetify-material-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/creativetimofficial/vuetify-material-dashboard.svg?maxAge=259200)](https://github.com/creativetimofficial/vuetify-material-dashboard/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim/material-dashboard) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+**Live demo:** http://panjiachen.github.io/vue-admin-template
 
-![Product Gif](./public/img/vuetify-material-dashboard.gif)
+[中文文档](https://github.com/PanJiaChen/vue-admin-template/blob/master/README-zh.md)
 
-Vuetify Material Dashboard is a beautiful resource built over [Vuetify](https://vuetifyjs.com/en/) and [Vuex](https://vuex.vuejs.org/installation.html). It will help you get started developing dashboards in no time. Vuetify Material Dashboard is the official Vuejs version of the Original [Material Dashboard](https://www.creative-tim.com/product/material-dashboard). Using the Dashboard is pretty simple but requires basic knowledge of Javascript, [Vue](https://vuejs.org/v2/guide/), [Vuex](https://vuex.vuejs.org/installation.html) and [Vue-Router](https://router.vuejs.org/en/).
+## Build Setup
 
-## Getting Started
-- Install Nodejs from [Nodejs Official Page](https://nodejs.org/en/)
-- Open your terminal
-- Navigate to the project
-- Run `npm install` or `yarn install` if you use [Yarn](https://yarnpkg.com/en/)
-- Run `npm run dev` or `yarn serve` to start a local development server
-- A new tab will be opened in your browser
+```bash
+# Clone project
+git clone https://github.com/PanJiaChen/vue-admin-template.git
 
-You can also run additional npm tasks such as
-- `npm run build` to build your app for production
-- `npm run lint` to run linting.
+# Install dependencies
+npm install
 
-## Vuetify
-Vuetify is developed exactly according to Material Design spec. Every component is hand crafted to bring you the best possible UI tools to your next great app. The development doesn't stop at the core components outlined in Google's spec. Through the support of community members and sponsors, additional components will be designed and made available for everyone to enjoy.
+# Serve with hot reload at localhost:9528
+npm run dev
 
+# Build for production with minification
+npm run build
 
-## Vuex
-
-Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion. It also integrates with Vue's official [devtools](https://github.com/vuejs/vue-devtools) extension to provide advanced features such as zero-config time-travel debugging and state snapshot export / import.
-
-## Vue-cli
-
-We used the latest 3.x [Vue CLI](https://github.com/vuejs/vue-cli) which aims to reduce project configuration
-to as little as possible. Almost everything is inside `package.json` + some other related files such as
-`.babel.config.js`, `.eslintrc.js` and `.postcssrc.js`.
-
-Let us know what you think and what we can improve below. And good luck with development!
-
-
-#### Special thanks
-During the development of this dashboard, we have used many existing resources from awesome developers. We want to thank them for providing their tools open source:
-- [Vuetify](https://vuetifyjs.com/en/) for the wonderful framework
-
-
-Let us know your thoughts below. And good luck with development!
-
-## Table of Contents
-
-* [Versions](#versions)
-* [Demo](#demo)
-* [Quick Start](#quick-start)
-* [Documentation](#documentation)
-* [File Structure](#file-structure)
-* [Browser Support](#browser-support)
-* [Resources](#resources)
-* [Reporting Issues](#reporting-issues)
-* [Technical Support or Questions](#technical-support-or-questions)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
-
-
-## Versions
-
-
-
-[<img src="https://pbs.twimg.com/profile_images/900908683927982080/GWykKJ7r_400x400.jpg" width="60" height="60" />](https://www.creative-tim.com/product/vuetify-material-dashboard)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-pro)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-pro-react)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard-pro)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-pro-angular2)
-
-
-Vuetify | Vue | React | Angular | HTML |
-| --- | --- | --- | --- | --- |
-| [![Vuetify Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/100/original/opt_md_vuetify_thumbnail.jpg)](https://www.creative-tim.com/product/vuetify-material-dashboard-pro) | [![Vue Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/81/original/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard) | [![Material Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/71/original/opt_mdr_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react)  | [![Material Dashboard Angular](https://s3.amazonaws.com/creativetim_bucket/products/53/original/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-angular2) | [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard)
+# Build for production and view the bundle analyzer report
+npm run build --report
+```
 
 ## Demo
 
-- [Start page](https://demos.creative-tim.com/vuetify-material-dashboard)
-- [Notifications page](https://demos.creative-tim.com/vuetify-material-dashboard/#/notifications)
+![demo](https://github.com/PanJiaChen/PanJiaChen.github.io/blob/master/images/demo.gif)
 
-[View More](https://demos.creative-tim.com/vue-material-dashboard-pro).
+## Extra
 
+If you want router permission && generate menu by user roles , you can use this branch [permission-control](https://github.com/PanJiaChen/vue-admin-template/tree/permission-control)
 
-## Quick start
+This project is based on `webpack4` development. If you want to use `webpack3` development, please use this branch [webpack3](https://github.com/PanJiaChen/vue-admin-template/tree/webpack3)
 
-Quick start options:
+For `typescript` version, you can use [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template) (Credits: [@Armour](https://github.com/Armour))
 
-- Download from [Creative Tim](https://www.creative-tim.com/product/vuetify-material-dashboard)
+## Related Project
 
+[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
 
-## Documentation
-The documentation for the Vuetify Material Dashboard is hosted at our [website](https://demos.creative-tim.com/vuetify-material-dashboard/documentation).
+[electron-vue-admin](https://github.com/PanJiaChen/electron-vue-admin)
 
+[vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template)
 
-## File Structure
+### Element-Ui using cdn tutorial
 
-Within the download you'll find the following directories and files:
+First find `index.html`([root directory](https://github.com/PanJiaChen/vue-admin-template/blob/element-ui-cdn/index.html))
+
+Import css and js of `Element`, and then import vue. Because `Element` is vue-dependent, vue must be import before it.
+
+Then find [webpack.base.conf.js](https://github.com/PanJiaChen/vue-admin-template/blob/element-ui-cdn/build/webpack.base.conf.js)
+Add `externals` to make webpack not package vue and element.
 
 ```
-vuetify-material-dashboard
-├── README.md
-├── babel.config.js
-├── package.json
-├── public
-│   ├── favicon.ico
-│   └── index.html
-├── src
-│   ├── App.vue
-│   ├── assets
-│   ├── components
-│   │   ├── core
-│   │   │   ├── Drawer.vue
-│   │   │   ├── Filter.vue
-│   │   │   ├── Footer.vue
-│   │   │   ├── Toolbar.vue
-│   │   │   └── View.vue
-│   │   ├── helper
-│   │   │   └── Offset.vue
-│   │   ├── index.js
-│   │   └── material
-│   │       ├── Card.vue
-│   │       ├── ChartCard.vue
-│   │       ├── Notification.vue
-│   │       └── StatsCard.vue
-│   ├── i18n
-│   │   └── index.js
-│   ├── lang
-│   │   ├── en
-│   │   │   ├── Common.json
-│   │   │   ├── Core
-│   │   │   │   ├── Footer.json
-│   │   │   │   └── Toolbar.json
-│   │   │   └── Home.json
-│   │   └── index.js
-│   ├── main.js
-│   ├── plugins
-│   │   ├── axios.js
-│   │   ├── chartist.js
-│   │   ├── index.js
-│   │   ├── theme.js
-│   │   └── vuetify.js
-│   ├── router
-│   │   ├── index.js
-│   │   └── paths.js
-│   ├── store
-│   │   ├── actions.js
-│   │   ├── getters.js
-│   │   ├── index.js
-│   │   ├── modules
-│   │   │   ├── app
-│   │   │   │   ├── mutations.js
-│   │   │   │   └── state.js
-│   │   │   └── index.js
-│   │   ├── mutations.js
-│   │   └── state.js
-│   ├── styles
-│   │   ├── index.scss
-│   │   └── material-dashboard
-│   ├── utils
-│   │   └── vuex.js
-│   └── views
-│       ├── Dashboard.vue
-│       ├── Icons.vue
-│       ├── Maps.vue
-│       ├── Notifications.vue
-│       ├── TableList.vue
-│       ├── Typography.vue
-│       ├── Upgrade.vue
-│       └── UserProfile.vue
-├── vue.config.js
-└── yarn.lock
+externals: {
+  vue: 'Vue',
+  'element-ui':'ELEMENT'
+}
 ```
 
-## Browser Support
+Finally there is a small detail to pay attention to that if you import vue in global, you don't need to manually `Vue.use(Vuex)`, it will be automatically mounted, see
+[issue](https://github.com/vuejs/vuex/issues/731)
 
-At present, we officially aim to support the last two versions of the following browsers:
+And you can use `npm run build --report` to see the effect
 
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
+Pictured:
+![demo](https://panjiachen.github.io/images/element-cdn.png)
 
+**[Detailed code](https://github.com/PanJiaChen/vue-admin-template/commit/746aff560932704ae821f82f10b8b2a9681d5177)**
 
-## Resources
-- [Live Preview](https://demos.creative-tim.com/vuetify-material-dashboard)
-- Download Page: https://www.creative-tim.com/product/vuetify-material-dashboard
-- Documentation is [here](https://demos.creative-tim.com/vuetify-material-dashboard/documentation)
-- License Agreement: https://www.creative-tim.com/license
-- Support: https://www.creative-tim.com/contact-us
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/vuetify-material-dashboard/issues)
-- Vue Material Dashboard - [demo](https://www.creative-tim.com/product/vue-material-dashboard?ref=github-md-pro)
-- For Front End Development - [Material Kit Pro ](https://www.creative-tim.com/product/material-kit-pro?ref=github-md-pro)
+**[Branch](https://github.com/PanJiaChen/vue-admin-template/tree/element-ui-cdn)**
 
-## Reporting Issues
-We use GitHub Issues as the official bug tracker for the Vuetify Material Dashboard. Here are some advices for our users that want to report an issue:
+## Browsers support
 
-1. Make sure that you are using the latest version of the Vuetify Material Dashboard. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+Modern browsers and Internet Explorer 10+.
 
-## Technical Support or Questions
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
+| --------- | --------- | --------- | --------- |
+| IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
 
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
+## License
 
-## Licensing
+[MIT](https://github.com/PanJiaChen/vue-admin-template/blob/master/LICENSE) license.
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com)
-- Creative Tim [license](https://www.creative-tim.com/license)
-
-## Useful Links
-
-- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
-
-- [Vue products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes) from Creative Tim
-
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
-
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
-
-##### Social Media
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
+Copyright (c) 2017-present PanJiaChen
