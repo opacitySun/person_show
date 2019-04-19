@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <t-head></t-head>
+        <v-head></v-head>
         <v-sidebar></v-sidebar>
         <div class="content-box" :class="{'content-collapse':collapse}">
             <v-tags></v-tags>
@@ -16,7 +16,7 @@
 </template>
 
 <script>
-    import tHead from './Header.vue';
+    import vHead from './Header.vue';
     import vSidebar from './Sidebar.vue';
     import vTags from './Tags.vue';
     import bus from './bus';
@@ -28,7 +28,7 @@
             }
         },
         components:{
-            tHead, vSidebar, vTags
+            vHead, vSidebar, vTags
         },
         created(){
             bus.$on('collapse', msg => {
